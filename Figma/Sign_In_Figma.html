@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="Sign_In_Figma.css">
+    <title>Sign In</title>
+</head>
+
+<body class="Body">
+
+    <div class="row">
+
+        <div class="col-7 gen">
+            <h2 class="Wcl">Welcome to</h2>
+            <img class="one" src="./OneRec.png" /> <br/> <br/>
+            <img class="hea" src="./Health.png" /> <br/> <br/>
+            <h3 class="other">Manage your Patients</h3>
+        </div>
+
+            <div class="col-5 win">
+
+                    <h1 class="sig">SignIn</h1>
+                    <h3 class="hap">We are happy to in a OneRec portal <br/> sign in and explore onerec</h3>
+                    <input class="email" type="email" placeholder="Enter your Email" id="email"> <br/>
+                    <input class="pass" type="password" placeholder="Enter your Password" id="pass"> <br/> <br/>
+                    <input class="CB" type="checkbox">
+                    <span>Remind me</span> 
+                    <span class="fp">Forget Password?</span> <br/> <br/>
+                    <button onclick="but1()" class="btn">Sign In</button>
+                    <button onclick="but2()" class="Btn"><span>Sign Up</span></button>
+
+            </div>
+
+    </div>
+
+    <script>
+
+        function but1(){
+
+            let EMAIL = document.getElementById("email").value
+            let P = document.getElementById("pass").value
+
+            if(EMAIL =='' || P =='') {
+                alert("Error. Please fill all the details");
+            } 
+            else{
+                localStorage.getItem("email", EMAIL)
+                localStorage.getItem("password", P)
+                alert("Sign In Success");
+
+                // Redirecting to Home Page after LogIn.
+                window.location.href = "Home_Figma.html"
+            }
+
+            // if(EMAIL !== EMAIL && P!== P) {
+            //     alert("Error. Email and Password did not match")
+            // }
+            // else{
+            //     alert("Sign Up Success !")
+            // }
+
+        }
+
+        function but2(){
+
+                // Redirecting to Home Page after LogIn.
+                window.location.href = "Sign_Up_Figma.html"
+        }
+
+    </script>
+</body>
+</html>

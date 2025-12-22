@@ -1,0 +1,17 @@
+.K{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(204, 43, 164);
+    padding-left: 10px;
+}
+
+.L{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: darkcyan;
+    width: 100px;
+    height: 85vh;
+    padding-left: 10px;
+}
+

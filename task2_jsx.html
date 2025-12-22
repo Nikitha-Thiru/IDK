@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="showDate()" id="date">Date</button> <br/> <br/>
+    <button onclick="showYear()" id="year">Year</button> <br/> <br/>
+    <button onclick="showSeconds()" id="seconds">Second</button> <br/> <br/>
+    <button onclick="showMinutes()" id="minutes">Minutes</button> <br/> <br/>
+    <button onclick="showHours()" id="hours">Hour</button> <br/> <br/>
+    <script>
+
+        let date = new Date();
+        // function showDate(){
+        //     document.getElementById("date").textContent = date.getDate();
+        // }
+
+        // function showYear(){
+        //     document.getElementById("year").textContent = date.getFullYear();
+        // }
+
+        // function showSeconds(){
+        //     document.getElementById("seconds").textContent = date.getSeconds();
+        // }
+
+        // function showMinutes(){
+        //     document.getElementById("minutes").textContent = date.getMinutes();
+        // }
+
+        // function showHours(){
+        //     document.getElementById("hours").textContent = date.getHours();
+        // }
+
+        console.log(date);
+        console.log(date, getDate());
+        console.log(date, getYear());
+        console.log(date, getSeconds());
+        console.log(date, getMinutes());
+        console.log(date, getHours());
+    </script>
+</body>
+</html>

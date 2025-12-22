@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="SIgnUp_jsx.css"/>
+        <title>Object JSX</title>
+        
+    </head>
+
+    <body class="N">
+
+        <h1 class="N1">SIGN UP</h1>
+        <label>First Name</label>
+        <input type="text" placeholder="Your First Name" id="FN"> <br/> <br/>
+        <label>Last Name</label>
+        <input type="text" placeholder="Your Last Name" id="LN"> <br/> <br/>
+        <label>Username</label>
+        <input type="text" placeholder="Username" id="UN"> <br/> <br/>
+        <label>Password</label>
+        <input type="password" placeholder="Password" id="P"> <br/> <br/>
+
+        <button onclick="signup()">Sign UP</button>
+        
+        <script>
+
+            function signup() {
+
+              let FN = document.getElementById("FN").value
+              let LN = document.getElementById("LN").value
+              let UN = document.getElementById("UN").value
+              let P = document.getElementById("P").value
+
+              if (FN =='' || LN =='' || UN =='' || P =='') {
+                alert("Error. Please fill all the details");
+              } else{
+                localStorage.setItem("username", UN)
+                localStorage.setItem("password", P)
+                alert("Sign Up Success");
+
+                // Redirecting to Home Page after LogIn.
+                window.location.href = "Log_In.html"
+              }
+
+            }
+
+        </script>
+
+    </body>
+</html>

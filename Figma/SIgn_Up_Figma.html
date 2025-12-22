@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="Sign_Up_Figma.css">
+    <title>Sign Up</title>
+</head>
+<body class="Body">
+
+    <div class="row">
+
+        <div class="col-7 gen">
+            <h2 class="Wcl">Welcome to</h2>
+            <img class="one" src="./OneRec.png" /> <br/> <br/>
+            <img class="hea" src="./Doctor.png" /> <br/> <br/>
+            <h3 class="other">Manage your Patients</h3>
+        </div>
+
+        <div class="col-5 win">
+
+            <h1 class="sig">SignUp</h1>
+            <h3 class="hap">We are happy to in a OneRec portal <br/> sign up and explore onerec</h3>
+
+            <input class="FN" type="text" placeholder="Enter First Name" id="FN">
+            <input class="LN" type="text" placeholder="Enter Last Name" id="LN"> <br/> <br/>
+            <input class="PN" type="number" placeholder="Enter your Number" id="PN">
+            <input class="Email" type="email" placeholder="Enter your Email" id="Email"> <br/> <br/>
+            <input class="P" type="password" placeholder="Enter your Password" id="P">
+            <input class="CP" type="password" placeholder="Enter Confirm Password" id="CP"> <br/> <br/>
+            <input class="HN" type="text" placeholder="Enter the Hospital Name" id="HN"> <br/> <br/>
+            <input class="State" type="text" placeholder="Enter your State" id="State">
+            <input class="ZC" type="number" placeholder="Enter your ZipCode" id="ZC"> <br/> <br/>
+
+            <input class="CB" type="checkbox" id="CB">
+            <span>I am agree to all the terms and privacy policy</span> <br/> <br/>
+
+            <button onclick="btn()" class="btn">Sign In</button>
+            <button onclick="Btn()" class="Btn">Sign Up</button>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        function btn() {
+                window.location.href = "Sign_In_Figma.html"
+        }
+
+
+        function Btn() {
+
+            // Id name should be called inside the line of --> document.getElementById().value
+            let FN = document.getElementById("FN").value
+            let LN = document.getElementById("LN").value
+            let PN = document.getElementById("PN").value
+            let EMAIL = document.getElementById("Email").value
+            let P = document.getElementById("P").value
+            let CP = document.getElementById("CP").value
+            let CB = document.getElementById("CB").checked
+
+            if (FN =='' || LN =='' || PN =='' || EMAIL =='' || P =='' || CP =='') {
+                alert("Error. Please fill all the details");
+            }
+
+            if (P !== CP) {
+                alert("Passwords do not match");
+                return;
+            }
+
+            if (!CB) {
+                alert("Please agree to terms and privacy policy");
+                return;
+            }
+            
+            else{
+                localStorage.setItem("email", EMAIL)
+                localStorage.setItem("password", CP)
+                alert("Sign Up Success");
+
+                window.location.href =  "Sign_In_Figma.html";
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>

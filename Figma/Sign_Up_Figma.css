@@ -1,0 +1,147 @@
+.Body{
+  
+}
+
+.gen {
+  background: #4284F3;
+  height: 97.9vh;
+}
+
+.Wcl{
+  margin-left: 160px;
+  margin-top: 70px;
+  padding: 20px;
+  font-size: 70px;
+  color: white;
+}
+
+.one{
+  width: 281.63995361328125;
+  height: 67;
+  opacity: 1;
+  top: 262px;
+  margin-left: 230px;
+  color: #FFFFFF;
+}
+
+.hea{
+  width: 319.05133056640625;
+  height: 159;
+  opacity: 1;
+  top: 461px;
+  margin-left: 200px;
+  border-width: 1px;
+  border: 1px solid #FFFFFF
+}
+
+.other{
+  width: 415;
+  height: 57;
+  opacity: 1;
+  top: 755px;
+  margin-left: 210px;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 38px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+}
+
+.sig{
+  margin-left: 50px;
+  margin-top: 50px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.hap{
+  margin-left: 65px;
+  margin-top: 0px;
+  padding: 5px;
+  font-size: 10px;
+  font-family: #A6a6a6;
+  color: #A6a6a6;
+}
+
+.FN{
+  height: 40px;
+  width: 220px;
+  margin-left: 45px;
+}
+
+.LN{
+  height: 40px;
+  width: 220px;
+  margin-left: 50px;
+}
+
+.PN{
+  margin-left: 45px;
+  height: 40px;
+  width: 220px;
+}
+
+.Email{
+  height: 40px;
+  width: 220px;
+  margin-left: 50px;
+}
+
+.P{
+  height: 40px;
+  width: 220px;
+  margin-left: 45px;
+}
+
+.CP{
+  height: 40px;
+  width: 220px;
+  margin-left: 50px;
+}
+
+.HN{
+  height: 40px;
+  width: 400px;
+  margin-left: 45px;
+}
+
+.State{
+  height: 40px;
+  width: 220px;
+  margin-left: 45px;
+}
+
+.ZC{
+  height: 40px;
+  width: 220px;
+  margin-left: 50px;
+}
+
+.CB{
+  margin-left: 45px;
+}
+
+.btn{
+  width: 238;
+height: 62;
+opacity: 1;
+margin-left: 45px;
+top: 904px;
+left: 1266px;
+border-radius: 6px;
+background: #4284F3;
+}
+
+.Btn{
+  width: 238;
+opacity: 1;
+margin-left: 200px;
+padding-block: 6px;
+top: 903px;
+left: 1540px;
+border-width: 1px;
+border-radius: 6px;
+border: 1px solid #000000;
+}

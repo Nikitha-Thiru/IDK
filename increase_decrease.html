@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>Heyy Niks !..</h1> -->
+    <h1 id="sample">0</h1>
+    <!-- <label id="N"></label> -->
+     <button onclick="show()">+</button>
+     <button onclick="hide()">-</button>
+
+    <script>
+        // document.getElementById("N").textContent="Hai Everyone"
+
+        // It appears in inspect -> Console
+        let date = new Date()
+        console.log(date.getMonth()+1);
+
+        var a = 0
+        function show(){
+
+            // It starts to increase with 1 with declaring a dummy zero in <h1>0</h1>
+            a++
+            document.getElementById("sample").textContent=a
+
+
+            // It starts to increase with zero. so, there is no need to mention it in <h1>0</h1>
+            // document.getElementById("sample").textContent=a++
+        }
+
+        // To hide the text, the  textcontent should be empty
+        function hide(){
+            a--
+            document.getElementById("sample").textContent=a
+        }
+
+    </script>
+</body>
+</html>
